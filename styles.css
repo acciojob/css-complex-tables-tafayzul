@@ -1,28 +1,27 @@
-/*  your css code here. If applicable */
 .custom-table {
-  width: 100%;
   border-collapse: collapse;
-  border: 1px solid orange;
-  font-family: Arial, sans-serif;
+  /* Matches test: 0px top, 0px right, 1px bottom, 1px left */
+  border-width: 0px 0px 1px 1px;
+  border-style: solid;
+  border-color: rgb(255, 165, 0);
+  width: 100%;
 }
 
-/* Header Styling */
-.custom-table thead th {
-  background-color: #888888;
-  color: white;
-  font-weight: bold;
+.custom-table th {
+  background-color: rgb(136, 136, 136);
+  color: rgb(255, 255, 255);
 }
 
-/* Common Cell Styling */
 .custom-table th, 
 .custom-table td {
-  border: 1px solid orange;
+  /* Matches test: 1px top, 1px right, 0px bottom, 0px left */
+  border-width: 1px 1px 0px 0px;
+  border-style: solid;
+  border-color: rgb(255, 165, 0);
   text-align: center;
   padding: 3px 5px;
 }
 
-/* Sub-total Row Specifics */
 .sub-total-row .sub-total-text {
   text-align: right;
-  font-weight: normal; /* Adjust if you want bold */
 }
