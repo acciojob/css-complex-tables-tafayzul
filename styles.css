@@ -1,1 +1,28 @@
 /*  your css code here. If applicable */
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid orange;
+  font-family: Arial, sans-serif;
+}
+
+/* Header Styling */
+.custom-table thead th {
+  background-color: #888888;
+  color: white;
+  font-weight: bold;
+}
+
+/* Common Cell Styling */
+.custom-table th, 
+.custom-table td {
+  border: 1px solid orange;
+  text-align: center;
+  padding: 3px 5px;
+}
+
+/* Sub-total Row Specifics */
+.sub-total-row .sub-total-text {
+  text-align: right;
+  font-weight: normal; /* Adjust if you want bold */
+}
